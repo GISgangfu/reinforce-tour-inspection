@@ -1,0 +1,1 @@
+{"at":"2026-10-13 21:49:45","action":"confirm","findingId":"F-002-006","categoryCode":"MOBILE_SCAFFOLD","videoId":"vid-002","confidence":0.62,"note":"??????","before":{"reviewStatus":"pending","severity":"较大","categoryCode":"MOBILE_SCAFFOLD"},"after":{"reviewStatus":"confirmed","severity":"较大","categoryCode":"MOBILE_SCAFFOLD"}}

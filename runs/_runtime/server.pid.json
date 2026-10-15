@@ -1,0 +1,10 @@
+{
+  "pid": 39204,
+  "port": 8899,
+  "startedAt": "2026-10-15T15:43:18.730Z",
+  "entry": "D:\\dpsk harness workspace1\\yufan-tech-inspection\\server\\index.mjs",
+  "logs": {
+    "out": "D:\\dpsk harness workspace1\\yufan-tech-inspection\\runs\\_runtime\\server.out.log",
+    "err": "D:\\dpsk harness workspace1\\yufan-tech-inspection\\runs\\_runtime\\server.err.log"
+  }
+}

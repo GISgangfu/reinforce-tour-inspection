@@ -1,0 +1,214 @@
+[
+  {
+    "severity": "一般",
+    "needsHumanReview": true,
+    "reviewStatus": "pending",
+    "confidence": 0.77,
+    "counterEvidence": "头部区域受构件边缘与前景高光影响，存在遮挡可能，建议换角度帧复核。",
+    "blindSpots": [
+      "第一视角平视拍摄，仅覆盖镜头朝向区域",
+      "画面外人员不在判定范围"
+    ],
+    "measure": "现场提醒补戴安全帽，纳入班前教育记录。",
+    "evidence": {
+      "frames": [
+        {
+          "t": 5.5,
+          "src": "runs/RUN-20261013-001/shots/F-R001-001_01.jpg"
+        },
+        {
+          "t": 12.5,
+          "src": "runs/RUN-20261013-001/shots/F-R001-001_02.jpg"
+        },
+        {
+          "t": 19.5,
+          "src": "runs/RUN-20261013-001/shots/F-R001-001_03.jpg"
+        }
+      ],
+      "clip": "runs/RUN-20261013-001/clips/F-R001-001.mp4",
+      "clipStart": 5,
+      "clipDuration": 12,
+      "clip3s": "runs/RUN-20261013-001/clips/F-R001-001_3s.mp4",
+      "clip3sStart": 11
+    },
+    "id": "F-R001-001",
+    "videoId": "vid-up-mv6w1lxr",
+    "runId": "RUN-20261013-001",
+    "categoryCode": "PPE_HARDHAT",
+    "title": "砌筑作业人员未佩戴安全帽",
+    "description": "画面左侧工人在加气块砌筑作业面进行砂浆铺砌作业，头部仅见眼镜与手套，未见安全帽。",
+    "start": 5,
+    "end": 20,
+    "site": {
+      "building": "2号楼",
+      "floor": "12F",
+      "zone": "二次结构区 · 西侧"
+    },
+    "source": "upload",
+    "segmentIndex": 0,
+    "detection": {
+      "model": "vision-adapter/demo-rule",
+      "stage": "confirm",
+      "hitStrength": 0.98,
+      "rawConfidence": 0.91,
+      "confidencePenalty": 0.85,
+      "librarySource": "vid-002",
+      "libraryVerified": false,
+      "framesScanned": 36,
+      "segmentIndex": 0
+    },
+    "categoryName": "人员未佩戴安全帽",
+    "categoryGroup": "个体防护",
+    "categoryColor": "#e2483c",
+    "basis": [
+      {
+        "code": "JGJ 59-2011",
+        "clause": "3.1.3",
+        "text": "施工现场人员应正确佩戴安全帽。"
+      }
+    ]
+  },
+  {
+    "severity": "一般",
+    "needsHumanReview": true,
+    "reviewStatus": "pending",
+    "confidence": 0.75,
+    "counterEvidence": "该线路可能为短时作业临时线并已设专人看护，需确认敷设时段与看护记录。",
+    "blindSpots": [
+      "画面未覆盖线路起点配电箱",
+      "无法判断是否具备漏电保护与接零保护"
+    ],
+    "measure": "改为架空或穿管保护敷设，过道处设置过线槽或防护盖板。",
+    "evidence": {
+      "frames": [
+        {
+          "t": 22.5,
+          "src": "runs/RUN-20261013-001/shots/F-R001-002_01.jpg"
+        },
+        {
+          "t": 32,
+          "src": "runs/RUN-20261013-001/shots/F-R001-002_02.jpg"
+        },
+        {
+          "t": 41.5,
+          "src": "runs/RUN-20261013-001/shots/F-R001-002_03.jpg"
+        }
+      ],
+      "clip": "runs/RUN-20261013-001/clips/F-R001-002.mp4",
+      "clipStart": 22,
+      "clipDuration": 12,
+      "clip3s": "runs/RUN-20261013-001/clips/F-R001-002_3s.mp4",
+      "clip3sStart": 30.5
+    },
+    "id": "F-R001-002",
+    "videoId": "vid-up-mv6w1lxr",
+    "runId": "RUN-20261013-001",
+    "categoryCode": "TEMP_POWER",
+    "title": "成捆电缆沿地面明设横穿作业通道",
+    "description": "楼面通道上多根电缆成捆沿地面敷设，横穿人员与手推车通行路径，未见架空、穿管或过线槽保护。",
+    "start": 22,
+    "end": 42,
+    "site": {
+      "building": "2号楼",
+      "floor": "12F",
+      "zone": "通行通道 · 中部"
+    },
+    "source": "upload",
+    "segmentIndex": 1,
+    "detection": {
+      "model": "vision-adapter/demo-rule",
+      "stage": "confirm",
+      "hitStrength": 0.98,
+      "rawConfidence": 0.88,
+      "confidencePenalty": 0.85,
+      "librarySource": "vid-002",
+      "libraryVerified": false,
+      "framesScanned": 36,
+      "segmentIndex": 1
+    },
+    "categoryName": "临时用电线路敷设不规范",
+    "categoryGroup": "临时用电",
+    "categoryColor": "#c2410c",
+    "basis": [
+      {
+        "code": "JGJ 46-2005",
+        "clause": "7.2.3",
+        "text": "电缆线路应采用埋地或架空敷设，严禁沿地面明设。"
+      }
+    ]
+  },
+  {
+    "severity": "较大",
+    "needsHumanReview": true,
+    "reviewStatus": "pending",
+    "confidence": 0.53,
+    "counterEvidence": "作业人员可能已在平台另一侧系挂安全带，当前角度看不到安全带挂点。",
+    "blindSpots": [
+      "镜头仰角不足，看不到作业人员腰部以下",
+      "无法判断脚轮是否锁定、是否设置抛撑"
+    ],
+    "measure": "锁定脚轮、设置抛撑与防护栏杆，作业人员系挂安全带，禁止超载与移动中作业。",
+    "evidence": {
+      "frames": [
+        {
+          "t": 50.5,
+          "src": "runs/RUN-20261013-001/shots/F-R001-003_01.jpg"
+        },
+        {
+          "t": 55,
+          "src": "runs/RUN-20261013-001/shots/F-R001-003_02.jpg"
+        },
+        {
+          "t": 59.5,
+          "src": "runs/RUN-20261013-001/shots/F-R001-003_03.jpg"
+        }
+      ],
+      "clip": "runs/RUN-20261013-001/clips/F-R001-003.mp4",
+      "clipStart": 50,
+      "clipDuration": 10,
+      "clip3s": "runs/RUN-20261013-001/clips/F-R001-003_3s.mp4",
+      "clip3sStart": 53.5
+    },
+    "id": "F-R001-003",
+    "videoId": "vid-up-mv6w1lxr",
+    "runId": "RUN-20261013-001",
+    "categoryCode": "MOBILE_SCAFFOLD",
+    "title": "移动式操作平台上方有人作业",
+    "description": "画面中部黄色门式移动操作平台上有人作业，作业中存在高坠风险，需核查防护栏杆、脚轮锁定、抛撑及安全带系挂情况。",
+    "start": 50,
+    "end": 60,
+    "site": {
+      "building": "2号楼",
+      "floor": "12F",
+      "zone": "二次结构区 · 东侧"
+    },
+    "source": "upload",
+    "segmentIndex": 2,
+    "detection": {
+      "model": "vision-adapter/demo-rule",
+      "stage": "review",
+      "hitStrength": 0.86,
+      "rawConfidence": 0.62,
+      "confidencePenalty": 0.85,
+      "librarySource": "vid-002",
+      "libraryVerified": false,
+      "framesScanned": 36,
+      "segmentIndex": 2
+    },
+    "categoryName": "移动式脚手架作业",
+    "categoryGroup": "脚手架",
+    "categoryColor": "#7c3aed",
+    "basis": [
+      {
+        "code": "JGJ 80-2016",
+        "clause": "5.2.3",
+        "text": "移动式操作平台应设置防护栏杆并锁住脚轮。"
+      },
+      {
+        "code": "JGJ 80-2016",
+        "clause": "5.2.4",
+        "text": "操作平台上作业人员应系挂安全带。"
+      }
+    ]
+  }
+]

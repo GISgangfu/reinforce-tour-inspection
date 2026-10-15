@@ -1,0 +1,108 @@
+{
+  "runId": "RUN-20261013-001",
+  "videoId": "vid-up-mv6w1lxr",
+  "video": {
+    "id": "vid-up-mv6w1lxr",
+    "title": "现场人工上传-测试片段",
+    "duration": 85.96000000000001,
+    "source": "upload"
+  },
+  "mode": "demo-rule",
+  "startedAt": "2026-10-14 00:21:22",
+  "finishedAt": "2026-10-14 00:21:29",
+  "probe": {
+    "duration": 85.96000000000001,
+    "width": 960,
+    "height": 544,
+    "fps": 27.01,
+    "quality": {
+      "resolution": "C",
+      "shortSide": 544,
+      "notes": [
+        "分辨率偏低，安全帽/安全带等细粒度特征需局部裁剪放大后判定",
+        "第一视角平视拍摄，无法俯视洞口正下方，临边防护存在视角盲区",
+        "画面下缘长期被巡检员反光背心占据，该区域已屏蔽检测"
+      ]
+    },
+    "sceneCount": 4
+  },
+  "segments": [
+    {
+      "index": 0,
+      "start": 0,
+      "end": 21.45,
+      "scene": "上传视频 · 片段 1",
+      "hasPeople": true,
+      "hasMachinery": false,
+      "interest": 0.95,
+      "duration": 21.45
+    },
+    {
+      "index": 1,
+      "start": 21.45,
+      "end": 45.05,
+      "scene": "上传视频 · 片段 2",
+      "hasPeople": true,
+      "hasMachinery": true,
+      "interest": 0.69,
+      "duration": 23.6
+    },
+    {
+      "index": 2,
+      "start": 45.05,
+      "end": 85.96,
+      "scene": "上传视频 · 片段 4",
+      "hasPeople": true,
+      "hasMachinery": false,
+      "interest": 0.88,
+      "duration": 40.91
+    }
+  ],
+  "segmentCount": 3,
+  "candidateCount": 3,
+  "findingCount": 3,
+  "summary": {
+    "text": "本段视频时长 01:25，画面为上传视频 · 片段 1、上传视频 · 片段 2、上传视频 · 片段 4，共切分 3 个事件段，命中 3 项值得关注的安全问题。其中需优先处理的是：移动式操作平台上方有人作业（00:50–01:00）、砌筑作业人员未佩戴安全帽（00:05–00:20）、成捆电缆沿地面明设横穿作业通道（00:22–00:42）。判定为较大风险的有 1 项，均与临边洞口防护及材料堆载相关，建议当班整改并复查。另有 1 项置信度低于 0.7，受视角与分辨率限制无法确认，已转人工复核，不计入隐患统计。",
+    "severityCounts": {
+      "一般": 2,
+      "较大": 1
+    },
+    "typeCounts": {
+      "PPE_HARDHAT": 1,
+      "TEMP_POWER": 1,
+      "MOBILE_SCAFFOLD": 1
+    },
+    "total": 3,
+    "riskTotal": 3,
+    "lowConfidenceTotal": 1,
+    "highlight": [
+      {
+        "id": "F-R001-003",
+        "title": "移动式操作平台上方有人作业",
+        "severity": "较大",
+        "start": 50,
+        "end": 60,
+        "categoryCode": "MOBILE_SCAFFOLD",
+        "confidence": 0.53
+      },
+      {
+        "id": "F-R001-001",
+        "title": "砌筑作业人员未佩戴安全帽",
+        "severity": "一般",
+        "start": 5,
+        "end": 20,
+        "categoryCode": "PPE_HARDHAT",
+        "confidence": 0.77
+      },
+      {
+        "id": "F-R001-002",
+        "title": "成捆电缆沿地面明设横穿作业通道",
+        "severity": "一般",
+        "start": 22,
+        "end": 42,
+        "categoryCode": "TEMP_POWER",
+        "confidence": 0.75
+      }
+    ]
+  }
+}

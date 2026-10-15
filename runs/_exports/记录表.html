@@ -1,0 +1,187 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<title>安全巡检记录表</title><style>
+  *{box-sizing:border-box}
+  body{font:13.5px/1.7 "PingFang SC","Microsoft YaHei",system-ui,sans-serif;color:#111;margin:0;padding:26px 30px;background:#fff}
+  h1{font-size:21px;margin:0 0 4px;text-align:center;letter-spacing:2px}
+  .sub{text-align:center;color:#666;font-size:12px;margin-bottom:18px}
+  .doc-meta{display:flex;justify-content:space-between;font-size:12px;color:#444;border-bottom:2px solid #111;padding-bottom:8px;margin-bottom:16px}
+  table{width:100%;border-collapse:collapse;margin:10px 0;font-size:12.5px}
+  th,td{border:1px solid #999;padding:6px 8px;vertical-align:top;text-align:left}
+  th{background:#f0f2f5;font-weight:600;white-space:nowrap}
+  .kv td:first-child{background:#f7f8fa;width:110px;white-space:nowrap;color:#333}
+  .finding{border:1px solid #bbb;border-radius:4px;padding:11px 13px;margin-bottom:12px;page-break-inside:avoid}
+  .f-head{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:7px}
+  .f-no{background:#111;color:#fff;font-weight:700;padding:1px 8px;border-radius:3px;font-size:12px}
+  .f-title{font-weight:700;font-size:14px}
+  .tag{font-size:11.5px;padding:1px 7px;border-radius:10px;border:1px solid #999;color:#333}
+  .sev-critical{background:#ffe5e3;border-color:#d33;color:#a11}
+  .sev-major{background:#fff2e0;border-color:#e80;color:#a50}
+  .sev-normal{background:#fffbe0;border-color:#ca0;color:#860}
+  .sev-info{background:#e8f2ff;border-color:#48a;color:#246}
+  .mono{font-family:Consolas,monospace}
+  .ev{display:flex;gap:8px;margin:8px 0}
+  .ev figure{margin:0;flex:1}
+  .ev img{width:100%;border:1px solid #999;border-radius:3px;display:block}
+  .ev figcaption{font-size:11px;color:#666;text-align:center;margin-top:2px;font-family:Consolas,monospace}
+  .box{border-left:3px solid #666;background:#f7f8fa;padding:7px 10px;margin:6px 0;font-size:12.5px}
+  .box.counter{border-left-color:#e80;background:#fff8ee}
+  .box.blind{border-left-color:#c60;background:#fffaf0}
+  .box b{display:block;font-size:11.5px;color:#555;margin-bottom:2px}
+  .summary{border:1px solid #bbb;background:#fafbfc;padding:11px 13px;border-radius:4px;margin:12px 0;line-height:1.85}
+  .sign{display:flex;gap:40px;margin-top:26px;font-size:13px}
+  .sign div{flex:1;border-top:1px solid #333;padding-top:6px;color:#444}
+  .foot{margin-top:20px;font-size:11px;color:#777;border-top:1px solid #ddd;padding-top:8px;display:flex;justify-content:space-between}
+  .notice{margin:14px 0;line-height:2}
+  .notice td{height:26px}
+  @media print{body{padding:0} .noprint{display:none} @page{margin:14mm}}
+  </style></head><body>
+<h1>安全巡检记录表</h1>
+<div class="sub">示例项目 · 2号楼 12层 · 影像巡检</div>
+<div class="doc-meta"><span>巡检视频：2号楼 12层 二次结构巡检｜打标 9 条（隐患 8 条）</span><span>生成时间 2026-10-13 22:13:55</span></div>
+
+  <table class="kv">
+    <tr><td>工程名称</td><td>示例项目 · 2号楼 12层</td><td>巡检日期</td><td>2026-10-13</td></tr>
+    <tr><td>巡检设备</td><td>执法记录仪｜2号楼安全员-执法记录仪-07（CAM-BC-0007）</td><td>巡检人</td><td>张建国（安全员）</td></tr>
+    <tr><td>视频时长</td><td>03:00</td><td>画面规格</td><td>960×544 / 27fps</td></tr>
+    <tr><td>AI 打标总数</td><td>9 条</td><td>其中安全隐患</td><td>8 条</td></tr>
+  </table>
+
+  <div class="summary"><b>安全问题总结</b><br>本段视频时长 03:00，画面为楼内二次结构作业面及室外材料堆场，共切分 8 个事件段，命中 7 项值得关注的安全问题。其中需优先处理的是：移动式操作平台上方有人作业（00:50–01:00）、临边栏杆内侧堆放钢跳板、木模板与扣件（01:36–01:56）、楼板洞口未见盖板、栏杆或安全网（02:03–02:14）、砌筑作业人员未佩戴安全帽（00:05–00:20）。判定为较大风险的有 3 项，均与临边洞口防护及材料堆载相关，建议当班整改并复查。另有 2 项置信度低于 0.7，受视角与分辨率限制无法确认，已转人工复核，不计入隐患统计。同时记录到 1 项防护到位情况，可作为正向依据归档。</div>
+
+  <p style="font-weight:600;margin:14px 0 4px">一、发现的安全隐患（按风险等级排序）</p>
+  <table>
+    <thead><tr>
+      <th style="width:36px">序号</th><th style="width:78px">时间码</th><th style="width:52px">等级</th>
+      <th style="width:136px">隐患类别</th><th style="width:220px">问题描述</th><th style="width:190px">规范依据</th>
+      <th style="width:56px">置信度</th><th style="width:60px">复核状态</th>
+    </tr></thead>
+    <tbody>
+      
+        <tr>
+          <td>1</td>
+          <td class="mono">00:05–00:20</td>
+          <td>一般</td>
+          <td>人员未佩戴安全帽<br><span style="color:#a11">重复隐患</span></td>
+          <td>砌筑作业人员未佩戴安全帽<br><span style="color:#666;font-size:11.5px">2号楼 12F 二次结构区 · 西侧</span></td>
+          <td style="font-size:11.5px">JGJ 59-2011 3.1.3</td>
+          <td class="mono">91%</td>
+          <td>待复核</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td class="mono">00:22–00:42</td>
+          <td>一般</td>
+          <td>临时用电线路敷设不规范<br><span style="color:#a11">重复隐患</span></td>
+          <td>成捆电缆沿地面明设横穿作业通道<br><span style="color:#666;font-size:11.5px">2号楼 12F 通行通道 · 中部</span></td>
+          <td style="font-size:11.5px">JGJ 46-2005 7.2.3</td>
+          <td class="mono">88%</td>
+          <td>待复核</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td class="mono">00:50–01:00</td>
+          <td>较大</td>
+          <td>移动式脚手架作业</td>
+          <td>移动式操作平台上方有人作业<br><span style="color:#666;font-size:11.5px">2号楼 12F 二次结构区 · 东侧</span></td>
+          <td style="font-size:11.5px">JGJ 80-2016 5.2.3<br>JGJ 80-2016 5.2.4</td>
+          <td class="mono">62%</td>
+          <td>待复核</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td class="mono">01:28–01:40</td>
+          <td>一般</td>
+          <td>材料堆放不规范<br><span style="color:#a11">重复隐患</span></td>
+          <td>钢管、扣件散乱堆放未分类码放<br><span style="color:#666;font-size:11.5px">2号楼 12F 二次结构区 · 南侧</span></td>
+          <td style="font-size:11.5px">JGJ 59-2011 3.9.3</td>
+          <td class="mono">85%</td>
+          <td>待复核</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td class="mono">01:36–01:56</td>
+          <td>较大</td>
+          <td>临边区域堆载、材料贴近防护栏杆<br><span style="color:#a11">重复隐患</span></td>
+          <td>临边栏杆内侧堆放钢跳板、木模板与扣件<br><span style="color:#666;font-size:11.5px">2号楼 12F 二次结构区 · 南侧临边</span></td>
+          <td style="font-size:11.5px">JGJ 80-2016 4.2.5</td>
+          <td class="mono">83%</td>
+          <td>待复核</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td class="mono">01:50–02:00</td>
+          <td>提示</td>
+          <td>湿滑地面/积水滑跌风险</td>
+          <td>楼梯踏步面湿润，下行滑跌风险<br><span style="color:#666;font-size:11.5px">2号楼 12F→11F 楼梯间</span></td>
+          <td style="font-size:11.5px">JGJ 59-2011 3.9.2</td>
+          <td class="mono">68%</td>
+          <td>待复核</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td class="mono">02:03–02:14</td>
+          <td>较大</td>
+          <td>楼板洞口/临边未见盖板或防护<br><span style="color:#a11">重复隐患</span></td>
+          <td>楼板洞口未见盖板、栏杆或安全网<br><span style="color:#666;font-size:11.5px">2号楼 12F 二次结构区 · 中部</span></td>
+          <td style="font-size:11.5px">JGJ 80-2016 4.1.2<br>JGJ 80-2016 4.2.1</td>
+          <td class="mono">86%</td>
+          <td>待复核</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td class="mono">02:18–02:28</td>
+          <td>提示</td>
+          <td>消防器材配置状态</td>
+          <td>灭火器已配置且外观完好（正向记录）<br><span style="color:#666;font-size:11.5px">堆场 - 材料堆场 · 消防棚</span></td>
+          <td style="font-size:11.5px">JGJ 59-2011 3.11.3</td>
+          <td class="mono">79%</td>
+          <td>已确认</td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p style="font-size:11.5px;color:#555;margin:4px 0 0">规范依据条款全文：<br>JGJ 59-2011 3.1.3：施工现场人员应正确佩戴安全帽。<br>JGJ 46-2005 7.2.3：电缆线路应采用埋地或架空敷设，严禁沿地面明设。<br>JGJ 80-2016 5.2.3：移动式操作平台应设置防护栏杆并锁住脚轮。<br>JGJ 80-2016 5.2.4：操作平台上作业人员应系挂安全带。<br>JGJ 59-2011 3.9.3：材料应分类堆放整齐、稳固，并设置标识牌。<br>JGJ 80-2016 4.2.5：临边防护栏杆内侧不得堆放材料、构件等物料。<br>JGJ 59-2011 3.9.2：施工现场应保持道路畅通、场地平整、排水通畅。<br>JGJ 80-2016 4.1.2：洞口应根据情况采取防护栏杆、加盖板、张挂安全网与防护棚等措施。<br>JGJ 80-2016 4.2.1：临边作业应设置防护栏杆并挂设安全网。<br>JGJ 59-2011 3.11.3：施工现场应按规定配置消防器材，并定期检查。</p>
+
+  <p style="font-weight:600;margin:16px 0 4px">二、防护到位情况（正向记录）</p>
+  <table>
+    <thead><tr><th style="width:36px">序号</th><th style="width:78px">时间码</th><th style="width:150px">类别</th><th>情况说明</th></tr></thead>
+    <tbody>
+      
+        <tr><td>1</td><td class="mono">02:45–03:00</td>
+        <td>防护到位（正向记录）</td><td>材料堆场分类堆放、道路划线清晰（正向记录）</td></tr>
+    </tbody>
+  </table>
+
+  <p style="font-weight:600;margin:16px 0 4px">三、隐患类型聚类统计</p>
+  <table>
+    <thead><tr><th style="width:190px">隐患类别</th><th style="width:70px">数量</th><th style="width:110px">等级</th><th>涉及时间码</th></tr></thead>
+    <tbody>
+      <tr>
+    <td>人员未佩戴安全帽</td><td>1</td><td>一般</td>
+    <td class="mono">00:05</td></tr><tr>
+    <td>临时用电线路敷设不规范</td><td>1</td><td>一般</td>
+    <td class="mono">00:22</td></tr><tr>
+    <td>移动式脚手架作业</td><td>1</td><td>较大</td>
+    <td class="mono">00:50</td></tr><tr>
+    <td>材料堆放不规范</td><td>1</td><td>一般</td>
+    <td class="mono">01:28</td></tr><tr>
+    <td>临边区域堆载、材料贴近防护栏杆</td><td>1</td><td>较大</td>
+    <td class="mono">01:36</td></tr><tr>
+    <td>湿滑地面/积水滑跌风险</td><td>1</td><td>提示</td>
+    <td class="mono">01:50</td></tr><tr>
+    <td>楼板洞口/临边未见盖板或防护</td><td>1</td><td>较大</td>
+    <td class="mono">02:03</td></tr><tr>
+    <td>消防器材配置状态</td><td>1</td><td>提示</td>
+    <td class="mono">02:18</td></tr>
+    </tbody>
+  </table>
+
+  <div class="sign">
+    <div>巡检人签字：<br><br>日期：　　年　　月　　日</div>
+    <div>安全负责人审核：<br><br>日期：　　年　　月　　日</div>
+  </div>
+<div class="foot">
+  <span>影像智巡 · 安全巡检视频智能分析平台</span>
+  <span>本文件由系统根据巡检视频 AI 打标结果生成，所有条目均可回溯至原始视频时间码</span>
+</div>
+</body></html>
